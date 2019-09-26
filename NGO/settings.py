@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'Order',
     'PersonInfo',
     'User',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
