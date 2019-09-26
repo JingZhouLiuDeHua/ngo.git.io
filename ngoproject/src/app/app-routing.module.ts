@@ -4,6 +4,8 @@ import { HomeComponent } from './components/home/home.component';
 import { DonationComponent } from './components/donation/donation.component';
 import { RegisterComponent } from './components/register/register.component';
 import { AmountComponent } from './components/amount/amount.component';
+import { SigninComponent } from './admin/signin/signin.component';
+import { ChooseComponent } from './admin/choose/choose.component';
 
 
 export const routes: Routes = [
@@ -19,7 +21,15 @@ export const routes: Routes = [
   },
   { path: 'amount',
     component: AmountComponent
-  }
+  },
+  { path: 'signin',
+    component: SigninComponent
+  },
+
+  {
+    path:'choose',
+    component:ChooseComponent
+  },
 ];
 
 @NgModule({

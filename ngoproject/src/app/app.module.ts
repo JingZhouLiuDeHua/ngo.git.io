@@ -10,6 +10,8 @@ import { RegisterComponent } from './components/register/register.component';
 import { AmountComponent } from './components/amount/amount.component';
 
 import { appRoutes } from './routerConfig';
+import { SigninComponent } from './admin/signin/signin.component';
+import { ChooseComponent } from './admin/choose/choose.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { appRoutes } from './routerConfig';
     HomeComponent,
     DonationComponent,
     RegisterComponent,
-    AmountComponent
+    AmountComponent,
+    SigninComponent,
+    ChooseComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes)
