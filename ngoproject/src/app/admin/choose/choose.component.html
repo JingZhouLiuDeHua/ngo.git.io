@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<title>NGO</title>
+<style>
+body,h1,h4,h3 {font-family: "Raleway", sans-serif}
+body, html {height: auto}
+.back  {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button {
+  background-color:silver;
+  border: none;
+  color: black;
+  padding: 40px 30px;
+  text-align: center;
+  text-decoration: bold;
+  display: inline-block;
+  font-size: 17px;
+  margin: 5px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.buttondonate:hover {
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
+</head>
+<body>
+  <img class="back" src="assets/img/back.jpg"/>  
+  <div style="text-align: center" class="w3-display-middle">
+  <h1><b>Admin Panel</b></h1>
+  <hr>
+    <h3>Select to continue</h3>
+    
+     <nav>
+      <a routerLink="/register" routerLinkActive="active"><button class="button buttondonate" ><b>User Management</b></button></a>
+      &nbsp;&nbsp;
+      <a routerLink="/register" routerLinkActive="active"><button class="button buttondonate" ><b>Donation Management</b></button></a>
+     </nav>
+    <hr>
+  </div>
+</body>
+</html>
