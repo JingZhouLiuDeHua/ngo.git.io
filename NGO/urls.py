@@ -1,28 +1,19 @@
-"""NGO URL Configuration
+from django.urls import path, include
+from django.conf.urls import url
 
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
+#from Order import views
+from PersonInfo import views
+
 from django.contrib import admin
-from django.urls import include,path
-from rest_framework import routers
-from Order import views
-
-router = routers.DefaultRouter()
-router.register(r'Order', views.OrderViewSet)
+admin.autodiscover()
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
-    path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    # Examples:
+    # url(r'^$', 'rest_example.views.home', name='home'),
+    # url(r'^blog/', include('blog.urls')),
+
+    #url(r'^admin/', include(admin.site.urls)),
+    #url(r'^order/', views.order_List,name='order_list'),
+    #url(r'^order/(?P<pk>[0-9]+)/$', views.order_detail,name='order_detail'),
+    url(r'^personinfo/(?P<pk>[0-9]+)/$', views.personinfo_detail,name='personinfo_detail'),
 ]
